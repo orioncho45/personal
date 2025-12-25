@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import { Box, Typography, TextField, Button, IconButton, CircularProgress } from '@mui/material';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
@@ -9,7 +9,7 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import WhatsappIcon from '@mui/icons-material/WhatsApp';
 import './style.css';
 
-const ContactSection = () => {
+const ContactSection = forwardRef((props, ref) => {
   
   // 1. Formik Setup
   const formik = useFormik({
@@ -74,6 +74,7 @@ const ContactSection = () => {
             <div className="input-group">
               <label>Name</label>
               <TextField 
+              inputRef={ref}
                 fullWidth 
                 name="name"
                 placeholder="Your name" 
@@ -139,7 +140,7 @@ const ContactSection = () => {
       </Box>
     </Box>
   );
-};
+});
 
 // Reusable style object for TextFields
 const textFieldStyle = {

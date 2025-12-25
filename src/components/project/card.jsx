@@ -5,7 +5,8 @@ const ProjectCard = ({
   image, // Added image prop
   title, 
   description, 
-  tech = [] 
+  tech = [],
+  onClick=()=>{}
 }) => {
   return (
     <div className="project-card">
@@ -31,7 +32,10 @@ const ProjectCard = ({
         ))}
       </div>
 
-      <button className="project-btn">View Project</button>
+      <button className="project-btn" onClick={e=>{
+        e.preventDefault()
+        onClick()
+      }}>View Project</button>
     </div>
   );
 };
