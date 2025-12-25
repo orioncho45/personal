@@ -1,0 +1,60 @@
+.about-container {
+  background-color: #111; /* Matching your black theme */
+  color: #fff;
+  padding: 100px 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.about-title {
+  font-weight: 800 !important;
+  margin-bottom: 50px !important;
+  font-size: 3.5rem !important;
+}
+
+/* Bio Text Styling */
+.about-text-primary {
+  font-size: 1.25rem !important;
+  line-height: 1.6 !important;
+  margin-bottom: 30px !important;
+  color: #ffffff;
+}
+
+.about-text-secondary {
+  font-size: 1.1rem !important;
+  line-height: 1.6 !important;
+  color: #888; /* Dimmer text for the secondary paragraph */
+}
+
+/* Stats Sidebar Styling */
+.stats-column {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.stat-item {
+  border-left: 3px solid #fff; /* The vertical white line accent */
+  padding-left: 20px;
+}
+
+.stat-label {
+  font-size: 1.2rem !important;
+  font-weight: 700 !important;
+  margin-bottom: 4px !important;
+  text-transform: capitalize;
+}
+
+.stat-value {
+  font-size: 1rem !important;
+  color: #888;
+}
+
+/* Responsive adjustment for small screens */
+@media (max-width: 900px) {
+  .about-title {
+    font-size: 2.5rem !important;
+  }
+  .stat-item {
+    margin-bottom: 10px;
+  }
+}

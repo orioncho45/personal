@@ -1,0 +1,86 @@
+.contact-container {
+  background-color: #000;
+  color: #fff;
+  padding: 80px 40px;
+  border-top: 1px solid white;
+  display: flex;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.contact-content {
+  max-width: 1100px;
+  width: 100%;
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+}
+
+/* Left Side Styling */
+.contact-info {
+  flex: 1;
+}
+
+.contact-title {
+  font-weight: 800 !important;
+  margin-bottom: 30px !important;
+}
+
+.contact-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #ccc;
+  margin-bottom: 30px !important;
+}
+
+.email-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-btn {
+  background-color: #1a1a1a !important;
+  color: #fff !important;
+  border-radius: 4px !important;
+}
+
+/* Form Styling */
+.contact-form-wrapper {
+  flex: 1;
+  border: 1px solid #444;
+  padding: 40px;
+  border-radius: 4px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* MUI Customizations */
+.submit-btn {
+  background-color: #fff !important;
+  color: #000 !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+  padding: 12px !important;
+  margin-top: 10px !important;
+}
+
+/* Responsive Logic */
+@media (max-width: 900px) {
+  .contact-content {
+    flex-direction: column;
+  }
+}
