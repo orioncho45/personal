@@ -29,15 +29,22 @@ const ProjectViewer = ({ open, onClose, project, onClick=()=>{} }) => {
 
         {/* Gallery */}
       <div className="viewer-gallery">
-  {project.media.map((item, index) => (
-    <div className="viewer-item" key={index}>
-      {item.type === "image" ? (
-        <img src={item.src} alt="" />
-      ) : (
-        <video src={item.src} controls />
-      )}
-    </div>
-  ))}
+      {project.media.map((item, index) => (
+        <div className="viewer-item" key={index}>
+          {item.type === "image" ? (
+            <img src={item.src} alt="" loading="lazy" />
+          ) : (
+            <video
+              src={item.src}
+              muted
+              autoPlay
+              loop
+              playsInline
+            />
+          )}
+        </div>
+      ))}
+
 </div>
 
 
@@ -50,7 +57,7 @@ const ProjectViewer = ({ open, onClose, project, onClick=()=>{} }) => {
             e.preventDefault();
             onClick()
           }}>
-            Contact me
+            Contact me for demo
           </button>
         </div>
       </div>
