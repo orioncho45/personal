@@ -1,0 +1,251 @@
+@media (max-width: 1050px) {
+  .site-nav {
+    gap: 14px;
+  }
+  .site-nav a {
+    font-size: 0.66rem;
+  }
+  .hero-grid {
+    grid-template-columns: 1fr 0.8fr;
+  }
+  .hero h1 {
+    font-size: clamp(5rem, 10vw, 8rem);
+  }
+  .hero-art-cut {
+    width: 22%;
+  }
+  .expertise-row {
+    grid-template-columns: 50px 1fr 1fr 30px;
+  }
+}
+@media (max-width: 800px) {
+  .site-header {
+    height: 68px;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .site-nav {
+    display: none;
+    position: absolute;
+    top: 68px;
+    left: 0;
+    right: 0;
+    background: #080808;
+    border-bottom: 1px solid #444;
+    padding: 18px 5vw 30px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+  }
+  .site-nav.is-open {
+    display: flex;
+  }
+  .site-nav a {
+    padding: 13px 0;
+    font-size: 0.82rem;
+  }
+  .site-nav a:last-child {
+    margin-top: 14px;
+    text-align: center;
+  }
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .hero-copy {
+    min-height: 650px;
+    padding: 80px 6vw 35px;
+  }
+  .hero h1 {
+    font-size: clamp(5rem, 14vw, 9rem);
+  }
+  .hero-art {
+    min-height: 500px;
+  }
+  .hero-art-cut {
+    width: 15%;
+  }
+  .portrait-frame {
+    inset: 12% 13% 10% 17%;
+  }
+  .section-lead-grid,
+  .booking-layout,
+  .booking-page,
+  .contact-page {
+    grid-template-columns: 1fr;
+  }
+  .section-lead-grid {
+    gap: 25px;
+  }
+  .section-lead-grid > div {
+    max-width: 670px;
+  }
+  .booking-big-type {
+    display: none;
+  }
+  .expertise-row {
+    grid-template-columns: 35px 1fr 25px;
+  }
+  .expertise-row p {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .expertise-row > span:last-child {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .numbered-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .contact-strip {
+    flex-wrap: wrap;
+  }
+  .contact-strip h2 {
+    flex: 1 1 60%;
+  }
+  .footer-top {
+    align-items: start;
+  }
+  .footer-mark {
+    font-size: 24vw;
+  }
+  .detail-story {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .detail-story h2 {
+    margin: 0;
+  }
+}
+@media (max-width: 600px) {
+  .section-pad {
+    padding: 75px 6vw;
+  }
+  .hero-copy {
+    min-height: 580px;
+  }
+  .hero h1 {
+    font-size: clamp(4.1rem, 16vw, 7rem);
+    white-space: normal;
+  }
+  .hero-bottom {
+    font-size: 0.52rem;
+    gap: 8px;
+  }
+  .hero-scroll-line {
+    width: 20px;
+  }
+  .hero-art {
+    min-height: 430px;
+  }
+  .portrait-frame strong {
+    font-size: clamp(3.3rem, 12vw, 5rem);
+  }
+  .manifesto,
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+  .manifesto {
+    gap: 18px;
+  }
+  .section-lead {
+    margin-bottom: 40px;
+  }
+  .section-lead h2 {
+    font-size: clamp(3.4rem, 14vw, 5.5rem);
+  }
+  .expertise-row {
+    padding: 27px 0;
+    gap: 15px;
+  }
+  .project-grid {
+    grid-template-columns: 1fr;
+    gap: 42px;
+  }
+  .project-image-frame {
+    height: 290px;
+  }
+  .booking-panel {
+    padding: 30px;
+  }
+  .booking-panel-top {
+    margin-bottom: 45px;
+  }
+  .booking-panel h3 {
+    font-size: 2.55rem;
+  }
+  .contact-strip {
+    padding: 45px 6vw;
+  }
+  .contact-strip h2 {
+    flex: 1 1 100%;
+  }
+  .footer-top {
+    display: block;
+  }
+  .footer-mark {
+    display: block;
+    margin-bottom: 55px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+  }
+  .inner-hero {
+    min-height: 420px;
+  }
+  .inner-hero h1 {
+    font-size: clamp(3.5rem, 13vw, 6rem);
+  }
+  .numbered-grid,
+  .faq-grid {
+    grid-template-columns: 1fr;
+  }
+  .numbered-item {
+    min-height: 235px;
+  }
+  .contact-email {
+    font-size: 1.45rem;
+  }
+  .detail-title-row {
+    display: block;
+  }
+  .detail-title-row span {
+    display: block;
+  }
+  .detail-hero h1 {
+    font-size: clamp(3.6rem, 12vw, 6rem);
+  }
+  .detail-facts {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .detail-story {
+    padding-top: 70px;
+  }
+  .viewer-controls {
+    align-items: start;
+    flex-direction: column;
+  }
+  .viewer-stage {
+    aspect-ratio: 4/3;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
+:root:not(.js-motion) .reveal {
+  opacity: 1;
+  transform: none;
+}

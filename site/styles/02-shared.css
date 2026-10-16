@@ -1,0 +1,141 @@
+.site-header {
+  height: 76px;
+  border-bottom: 1px solid #282828;
+  background: rgba(7, 7, 7, 0.93);
+  backdrop-filter: blur(18px);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+.nav-shell {
+  height: 100%;
+  max-width: 1560px;
+  margin: auto;
+  padding: 0 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  font-size: 1.1rem;
+  font-weight: 900;
+  letter-spacing: 0.11em;
+  white-space: nowrap;
+}
+.brand img {
+  object-fit: cover;
+  border-radius: 50%;
+  filter: contrast(1.3);
+}
+.brand-dot,
+.footer-mark span {
+  color: #aaa;
+}
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: clamp(16px, 2vw, 36px);
+}
+.site-nav a {
+  font-size: 0.73rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #aaa;
+  transition: color 0.2s;
+}
+.site-nav a:hover,
+.site-nav .is-current {
+  color: #fff;
+}
+.site-nav a:last-child {
+  border: 1px solid #777;
+  padding: 12px 16px;
+  color: #fff;
+}
+.site-nav a:last-child:hover {
+  background: #fff;
+  color: #070707;
+}
+.menu-toggle {
+  display: none;
+  background: none;
+  border: 0;
+  color: #fff;
+  padding: 12px;
+}
+.menu-toggle span {
+  display: block;
+  width: 25px;
+  height: 2px;
+  background: #fff;
+  margin: 5px 0;
+}
+.eyebrow {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  color: #bcbcb9;
+  font-size: 0.69rem !important;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin: 0 0 34px !important;
+}
+.eyebrow span {
+  color: #fff;
+}
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 42px;
+  min-height: 54px;
+  padding: 16px 21px;
+  font-size: 0.77rem;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    transform 0.2s,
+    border-color 0.2s;
+}
+.button:hover {
+  transform: translateY(-3px);
+}
+.button-light {
+  background: #efefec;
+  color: #080808;
+  border: 1px solid #efefec;
+}
+.button-light:hover {
+  background: #c9c9c5;
+}
+.button-outline {
+  border: 1px solid #696969;
+  color: #fff;
+}
+.button-outline:hover {
+  background: #fff;
+  color: #000;
+  border-color: #fff;
+}
+.text-link {
+  display: inline-block;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  transition: letter-spacing 0.2s;
+}
+.text-link:hover {
+  letter-spacing: 0.17em;
+}

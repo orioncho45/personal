@@ -1,0 +1,38 @@
+.site-footer {
+  background: #070707;
+  padding: 85px 5vw 30px;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 30px;
+  margin-bottom: 90px;
+}
+.footer-mark {
+  font-family: var(--display);
+  font-size: clamp(8rem, 24vw, 23rem);
+  line-height: 0.7;
+  letter-spacing: -0.1em;
+}
+.footer-top > div {
+  max-width: 460px;
+}
+.footer-top p {
+  font-size: clamp(1.3rem, 2.5vw, 2.5rem);
+  line-height: 1.2;
+}
+.footer-bottom {
+  border-top: 1px solid #333;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 24px;
+  font-size: 0.67rem;
+  color: #aaa;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.footer-bottom a {
+  color: #fff;
+}

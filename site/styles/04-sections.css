@@ -1,0 +1,98 @@
+.section-lead {
+  max-width: 1400px;
+  margin: 0 auto 66px;
+}
+.section-lead-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 60px;
+  align-items: end;
+}
+.section-lead h2 {
+  font-size: clamp(3.6rem, 7vw, 8.3rem);
+  line-height: 0.95;
+  text-transform: uppercase;
+  letter-spacing: -0.065em;
+  margin: 0;
+}
+.section-lead h2 em {
+  text-transform: none;
+  letter-spacing: -0.07em;
+}
+.section-lead-grid > div {
+  padding-bottom: 10px;
+  max-width: 440px;
+}
+.section-lead-grid p {
+  font-size: clamp(1rem, 1.3vw, 1.22rem);
+  color: #aaa;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+.intro {
+  background: #111;
+}
+.manifesto {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  border-top: 1px solid #444;
+  padding-top: 34px;
+  gap: 30px;
+  max-width: 1400px;
+  margin: auto;
+}
+.manifesto span {
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  color: #aaa;
+  font-weight: 800;
+}
+.manifesto p {
+  font-size: clamp(1.6rem, 2.6vw, 3rem);
+  line-height: 1.22;
+  max-width: 930px;
+  letter-spacing: -0.04em;
+  margin-bottom: 0;
+}
+.expertise-section {
+  background: #0a0a0a;
+}
+.expertise-list {
+  border-top: 1px solid #333;
+}
+.expertise-row {
+  display: grid;
+  grid-template-columns: 80px 1fr 1fr 40px;
+  gap: 25px;
+  align-items: center;
+  padding: 34px 10px;
+  border-bottom: 1px solid #333;
+  transition:
+    background 0.25s,
+    padding 0.25s;
+}
+.expertise-row:hover {
+  background: #171717;
+  padding-left: 20px;
+}
+.expertise-row > span {
+  color: #aaa;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+.expertise-row > span:last-child {
+  text-align: right;
+  color: #fff;
+  font-size: 1.6rem;
+}
+.expertise-row h3 {
+  font-size: clamp(1.5rem, 2.3vw, 2.4rem);
+  margin: 0;
+}
+.expertise-row p {
+  font-size: 0.95rem;
+  color: #aaa;
+  margin: 0;
+  max-width: 340px;
+}

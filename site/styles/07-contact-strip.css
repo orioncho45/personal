@@ -1,0 +1,20 @@
+.contact-strip {
+  border-top: 1px solid #555;
+  background: #1b1b1b;
+  padding: 55px 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+.contact-strip > span {
+  font-size: 0.64rem;
+  color: #aaa;
+  letter-spacing: 0.15em;
+  font-weight: 800;
+  max-width: 150px;
+}
+.contact-strip h2 {
+  font-size: clamp(1.7rem, 3.1vw, 3.3rem);
+  margin: 0;
+}
